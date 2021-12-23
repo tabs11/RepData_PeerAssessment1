@@ -63,7 +63,7 @@ ggplot(mean_steps_intv, aes(x=interval, y=mean_steps)) +
              y='Mean of total steps')
 ```
 
-### 2. 5-min interval containing the maximum number of steps?
+### 5-min interval containing the maximum number of steps?
 
 We can use **which.max** function to find the index and then search for the rows
 ```r
