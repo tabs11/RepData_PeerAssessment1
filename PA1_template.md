@@ -31,7 +31,7 @@ ggplot(steps_day, aes(x=count_steps)) +
              x='Steps', 
              y='Count')
 ```
-![image-1](plot1.png)
+!(plot1.png)
 
 
 Mean, median and I also included the standard deviation of steps taken by day
