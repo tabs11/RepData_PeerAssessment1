@@ -61,7 +61,7 @@ ggplot(mean_steps_intv, aes(x=interval, y=mean_steps)) +
              x='Interval', 
              y='Mean of total steps')
 ```
-![image-1](image-1.png) 
+![image-1](plot1.png) 
 
 ### 5-min interval containing the maximum number of steps?
 
