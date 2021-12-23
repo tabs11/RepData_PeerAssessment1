@@ -31,7 +31,7 @@ ggplot(steps_day, aes(x=count_steps)) +
              x='Steps', 
              y='Count')
 ```
-![](plot1.png)
+![](figure/plot1.png)
 
 
 Mean, median and I also included the standard deviation of steps taken by day
@@ -70,7 +70,7 @@ ggplot(mean_steps_intv, aes(x=interval, y=mean_steps)) +
              x='Interval', 
              y='Mean of total steps')
 ```
-![](plot2.png) 
+![](figure/plot2.png) 
 
 
 ### 5-min interval containing the maximum number of steps?
@@ -123,7 +123,7 @@ plot2<-ggplot(steps_day_knn, aes(x=count_steps)) + geom_histogram(color="black",
 require(gridExtra)
 grid.arrange(plot1, plot2, ncol=2)
 ```
-![](plot3.png) 
+![](figure/plot3.png) 
 
 
 Since we are putting new values based on KNN imputation and these imputed values are not extreme, the mean and median are reduced and the variance is slightly increased which makes sense.
@@ -179,7 +179,7 @@ Then we can use **ggplot2** and set the **facet_grid** parameter as *weekday*
 ```r
 ggplot(steps_day_knn_weekday, aes(interval, mean_steps)) + geom_line() + facet_grid(weekday ~ .)
 ```
-![](plot4.png) 
+![](figure/plot4.png) 
 
 
 There are some differences in number of steps taken between week days and weekends. Looks like during the weekdays the mean between 500 and 1000 steps is greater than in weekends but the mean between 1000 and 2000 looks greater in weekends than in weekdays.
