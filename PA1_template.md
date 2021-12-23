@@ -32,7 +32,7 @@ ggplot(steps_day, aes(x=count_steps)) +
              y='Count')
 ```
 
-I also included the standard deviation
+Mean, median and I also included the standard deviation of steps taken by day
 ```r
 mean_median_sd<-
         as.data.frame(
