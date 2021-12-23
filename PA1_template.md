@@ -42,7 +42,6 @@ mean_median_sd<-
                         Standard_Deviation=sd(steps_day$count_steps,na.rm=T)
                         )
                 )
-mean_median_sd
 ```
 ### What is the average daily activity pattern?
 
@@ -118,7 +117,6 @@ mean_median_sd_knn<-
                         Standard_Deviation=sd(steps_day_knn$count_steps,na.rm=T)
                         )
                 )
-mean_median_sd_knn
 ```
 
 ### Are there differences in activity patterns between weekdays and weekends?
@@ -134,11 +132,8 @@ atv_data_knn$weekday<-ifelse(
         weekdays(atv_data_knn$date)=="Saturday" | weekdays(atv_data_knn$date)=="Sunday",
         "Weekend day", 
         "Weekday")
-```
 
-```r
 atv_data_knn$weekday<-as.factor(atv_data_knn$weekday)
-summary(atv_data_knn)
 ```
 
 ### Panel plot containing the average steps in Weekdays and weekends
